@@ -1,23 +1,19 @@
-import { lazy } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { useState } from 'react';
+import Button from './Button/Button';
 
-import { SharedLayout } from './SharedLayout/SharedLayout';
+const App = () => {
+  const [search, setSearch] = useState('');
+  const [page, setPage] = useState(1);
+  const [images, setImages] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isEnd, setIsEnd] = useState(false);
 
-const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
-const AboutPage = lazy(() => import('../pages/AboutPage/AboutPage'));
-const ProjectPage = lazy(() => import('../pages/ProjectPage/ProjectPage'));
-const ContactPage = lazy(() => import('../pages/ContactPage/ContactPage'));
-
-export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<SharedLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/project" element={<ProjectPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Route>
-    </Routes>
+    <div>
+      <Button />
+    </div>
   );
 };
+
+export default App;
