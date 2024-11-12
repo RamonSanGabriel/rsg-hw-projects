@@ -1,9 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import css from './Header.module.css';
+import { useToggle } from '../../hooks/useToggle';
+import { MdOutlineMenu } from 'react-icons/md';
+import Sidebar from '../Sidebar/Sidebar';
+
 const Header = () => {
+  const { isOpen: isSidebarOpen, toggle: toggleSidebar } = useToggle(false);
   return (
     <header>
-      <nav>
+      <nav className={css.headerNav}>
         <NavLink
           to="/"
           end
@@ -17,9 +22,9 @@ const Header = () => {
           end
           className={({ isActive }) => (isActive ? css.linkActive : css.link)}
         >
-          About Me
+          About
         </NavLink>
-        
+
         <NavLink
           to="homeworks"
           end
@@ -27,6 +32,14 @@ const Header = () => {
         >
           Homeworks
         </NavLink>
+
+        <MdOutlineMenu
+          className={`${css.hamburgerIcon} ${
+            isSidebarOpen && css.visuallyHidden
+          }`}
+          onClick={toggleSidebar}
+        />
+        <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
       </nav>
     </header>
   );
