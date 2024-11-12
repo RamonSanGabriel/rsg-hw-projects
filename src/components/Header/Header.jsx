@@ -16,7 +16,6 @@ const Header = () => {
         >
           Homepage
         </NavLink>
-
         <NavLink
           to="about"
           end
@@ -32,15 +31,21 @@ const Header = () => {
         >
           Homeworks
         </NavLink>
-
-        <MdOutlineMenu
-          className={`${css.hamburgerIcon} ${
-            isSidebarOpen && css.visuallyHidden
-          }`}
-          onClick={toggleSidebar}
-        />
-        <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
       </nav>
+      {/*   <NavLink
+        to="/"
+        end
+        className={({ isActive }) => (isActive ? css.linkActive : css.link)}
+      >
+        Homepage
+      </NavLink> */}
+      <MdOutlineMenu
+        className={`${css.hamburgerIcon} ${
+          isSidebarOpen && css.visuallyHidden
+        }`}
+        onClick={toggleSidebar}
+      />
+      <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </header>
   );
 };
