@@ -14,3 +14,8 @@
   color: white;
   background-color: tomato;
 }
+.headerNav {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-shrink: 0; */
+}
