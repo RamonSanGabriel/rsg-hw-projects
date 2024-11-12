@@ -1,27 +1,19 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import PageTitle from '../../components/PageTitle/PageTitle';
+import Projects from '../../components/Projects/Projects';
 
 const Homeworks = () => {
   return (
     <div>
-      <h4>HTML & CSS</h4>
-      <ul>
-        <li>
-          <Link to="webstudio">Web Studio</Link>
-        </li>
-
-        <h4>JavaScript</h4>
-        <li>
-          <Link to="moviesearch">Movie Search</Link>
-        </li>
-
-        <h4>Phonebook</h4>
-        <li>
-          <Link to="phonebook">Phonebook</Link>
-        </li>
-      </ul>
-
-      <Outlet />
+      <HelmetProvider>
+        <Helmet>
+          <title>Homeworks</title>
+        </Helmet>
+        <PageTitle title="Homeworks" subtitle="" />
+      </HelmetProvider>
+      <Projects />
     </div>
   );
 };

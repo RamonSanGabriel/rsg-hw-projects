@@ -19,7 +19,6 @@
   /* justify-content: space-between; */
   align-items: center;
   padding: 16px 0;
-  margin-bottom: 16px;
   border-bottom: 1px solid var(--DARK);
   /* flex-direction: column; */
   /* flex-shrink: 0; */
@@ -27,6 +26,7 @@
 
 .hamburgerIcon {
   display: flex;
+  justify-content: flex-end;
 
   /*  @media screen and (min-width: 768px) {
     display: none;
@@ -38,5 +38,11 @@
 .headerNav {
   @media (width < 768px) {
     display: none;
+  }
+}
+header {
+  @media (width < 768px) {
+    display: flex;
+    justify-content: flex-end;
   }
 }

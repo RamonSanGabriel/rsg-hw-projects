@@ -1,10 +1,15 @@
 import React from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>This is my Homepage for Routing</h1>
-    </div>
+    <HelmetProvider>
+      <Helmet>
+        <title>HomePage</title>
+      </Helmet>
+      <PageTitle title="Home" subtitle="" />
+    </HelmetProvider>
   );
 };
 

@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Button from './Button/Button';
+// import Button from './Button/Button';
 // import NavLinks from './NavLinks/NavLinks';
 import SharedLayout from './SharedLayout/SharedLayout';
 import HomePage from '../pages/HomePage/HomePage';
