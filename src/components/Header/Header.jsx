@@ -32,13 +32,7 @@ const Header = () => {
           Homeworks
         </NavLink>
       </nav>
-      {/*   <NavLink
-        to="/"
-        end
-        className={({ isActive }) => (isActive ? css.linkActive : css.link)}
-      >
-        Homepage
-      </NavLink> */}
+
       <MdOutlineMenu
         className={`${css.hamburgerIcon} ${
           isSidebarOpen && css.visuallyHidden
