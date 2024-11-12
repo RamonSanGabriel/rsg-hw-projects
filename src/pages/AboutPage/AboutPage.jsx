@@ -10,7 +10,7 @@ const AboutPage = () => {
         <Helmet>
           <title>About</title>
         </Helmet>
-        <PageTitle title="About" subtitle="Learn more about me" />
+        <PageTitle title="" subtitle="Learn more about me" />
         <About />
       </HelmetProvider>
     </div>

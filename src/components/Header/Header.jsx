@@ -25,11 +25,11 @@ const Header = () => {
         </NavLink>
 
         <NavLink
-          to="homeworks"
+          to="projects"
           end
           className={({ isActive }) => (isActive ? css.linkActive : css.link)}
         >
-          Homeworks
+          Projects
         </NavLink>
       </nav>
 
