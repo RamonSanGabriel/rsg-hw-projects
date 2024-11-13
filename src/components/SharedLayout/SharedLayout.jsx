@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 const SharedLayout = () => {
   return (
-    <div style={{ margin: '0 16px' }}>
+    <div>
       <Header />
       <Suspense>
         <Outlet />

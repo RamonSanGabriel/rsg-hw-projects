@@ -1,6 +1,6 @@
 import project1 from '../images/project-1a.png';
 import project8 from '../images/project-8a.png';
-import project3 from '../images/project-3a.png';
+import project5 from '../images/project-5a.png';
 
 export const projects = [
   {
@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     id: 3,
-    src: project3,
+    src: project5,
     title: 'Phonebook',
     href: 'https://ramonsangabriel.github.io/goit-react-hw-08-phonebook',
   },

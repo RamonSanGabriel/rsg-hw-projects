@@ -1,23 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import css from './HomeworkLists.module.css';
 
 const HomeworkLists = () => {
   return (
     <div>
-      <h4>HTML & CSS</h4>
-      <ul>
+      <ul className={css.homeworkList}>
         <li>
-          <Link to="webstudio">Web Studio</Link>
+          <button className={css.homeworkButton}>
+            <span>
+              <Link to="webstudio">HTML & CSS</Link>
+            </span>
+          </button>
         </li>
 
-        <h4>JavaScript</h4>
         <li>
-          <Link to="moviesearch">Movie Search</Link>
+          <button className={css.homeworkButton}>
+            <span>
+              <Link to="moviesearch">JAVASCRIPT</Link>
+            </span>
+          </button>
         </li>
 
-        <h4>Phonebook</h4>
         <li>
-          <Link to="phonebook">Phonebook</Link>
+          <button className={css.homeworkButton}>
+            <span>
+              <Link to="phonebook">REACT JS</Link>
+            </span>
+          </button>
         </li>
       </ul>
     </div>

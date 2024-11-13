@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const Header = () => {
   const { isOpen: isSidebarOpen, toggle: toggleSidebar } = useToggle(false);
   return (
-    <header>
+    <header className={css.headerContainer}>
       <nav className={css.headerNav}>
         <NavLink
           to="/"

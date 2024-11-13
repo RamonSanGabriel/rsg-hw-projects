@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Projects from '../../components/Projects/Projects';
@@ -11,7 +9,7 @@ const ProjectPage = () => {
         <Helmet>
           <title>Projects</title>
         </Helmet>
-        <PageTitle title="" subtitle="Check out my works" />
+        <PageTitle title="" subtitle="Languages & Tools" />
       </HelmetProvider>
       <Projects />
     </div>
