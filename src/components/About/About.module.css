@@ -1,11 +1,21 @@
 .aboutContainer {
   /* display: flex; */
-  padding: 8px 0;
+  padding: 16px 0;
+
+  @media (width > 768px) {
+    display: flex;
+    gap: 16px;
+  }
 }
 .position {
   display: flex;
+  padding: 16px 0;
   /* min-width: 350px; */
 }
 .aboutImage {
   display: block;
+
+  @media (width <= 768px) {
+    margin: 0 auto;
+  }
 }
