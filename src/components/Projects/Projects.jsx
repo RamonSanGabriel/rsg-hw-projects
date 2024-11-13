@@ -10,8 +10,8 @@ const Projects = () => {
       <HomeworkLists />
       <Outlet />
       <div className={css.projects}>
-        {projects.map(({ id, src, title, href }) => (
-          <ProjectImages key={id} src={src} title={title} href={href} />
+        {projects.map(({ id, title, src, href }) => (
+          <ProjectImages key={id} title={title} src={src} href={href} />
         ))}
       </div>
     </div>

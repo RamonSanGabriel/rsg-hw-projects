@@ -8,11 +8,11 @@ const ProjectImages = ({ id, src, title, href }) => {
     <li key={id}>
       <a href={href} target="_blank" rel="noreferrer">
         <figure>
-          <img src={src} alt={title} width={260} height={240} />
-          <figcaption>Web Studio</figcaption>
+          <img src={src} title={title} width={260} height={240} />
+          <figcaption>{title}</figcaption>
         </figure>
       </a>{' '}
-      <div className={css.projectImagesTitle}>{title}</div>
+      <div></div>
     </li>
   );
 };
