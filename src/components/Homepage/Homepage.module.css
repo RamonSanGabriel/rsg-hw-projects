@@ -1,0 +1,21 @@
+.homeContainer {
+  /* display: flex; */
+  padding: 16px 0;
+
+  @media (width > 768px) {
+    display: flex;
+    gap: 16px;
+  }
+}
+.position {
+  display: flex;
+  padding: 16px 0;
+  /* min-width: 350px; */
+}
+.homeImage {
+  display: block;
+
+  @media (width <= 768px) {
+    margin: 0 auto;
+  }
+}

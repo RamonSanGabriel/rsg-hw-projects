@@ -14,7 +14,7 @@
 }
 
 /* CSS */
-/* .homeworkButton {
+.homeworkButton {
   appearance: none;
   background-color: #ffffff;
   border-width: 0;
@@ -44,9 +44,9 @@
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
-} */
+}
 
-/* .homeworkButton:before {
+.homeworkButton:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
   background-color: #ebebeb;
@@ -60,24 +60,24 @@
   transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
     -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
-} */
+}
 
-/* .homeworkButton:hover:before {
+.homeworkButton:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-} */
+}
 
-/* .homeworkButton:after {
+.homeworkButton:after {
   background-color: #ffffff;
-} */
+}
 
-/* .homeworkButton span {
+.homeworkButton span {
   z-index: 1;
   position: relative;
-} */
+}
 
 /* CSS */
-.homeworkButton {
+/* .homeworkButton {
   align-items: center;
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: 0;
@@ -131,4 +131,4 @@
   .button-75 span {
     line-height: 50px;
   }
-}
+} */

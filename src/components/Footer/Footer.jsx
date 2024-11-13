@@ -1,4 +1,3 @@
-import React from 'react';
 import { footerDetails } from '../../data/footer';
 import css from './Footer.module.css';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { aboutMe } from '../../data/about';
 import aboutImage from '../../images/about-2.png';
 import css from './About.module.css';
