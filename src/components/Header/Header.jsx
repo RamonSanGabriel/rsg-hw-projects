@@ -3,7 +3,6 @@ import css from './Header.module.css';
 import { useToggle } from '../../hooks/useToggle';
 import { MdOutlineMenu } from 'react-icons/md';
 import Sidebar from '../Sidebar/Sidebar';
-import HomePage from '../../pages/HomePage/HomePage';
 
 const Header = () => {
   const { isOpen: isSidebarOpen, toggle: toggleSidebar } = useToggle(false);

@@ -10,8 +10,8 @@ const ProjectPage = () => {
           <title>Projects</title>
         </Helmet>
         <PageTitle title="" subtitle="Languages & Tools" />
+        <Projects />
       </HelmetProvider>
-      <Projects />
     </div>
   );
 };

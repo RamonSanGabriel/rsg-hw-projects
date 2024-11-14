@@ -5,7 +5,7 @@
 .homeworkList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 
   @media (width >= 768px) {
     flex-direction: row;
