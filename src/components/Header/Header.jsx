@@ -15,7 +15,7 @@ const Header = () => {
           end
           className={({ isActive }) => (isActive ? css.linkActive : css.link)}
         >
-          Homepage
+          Home
         </NavLink>
         <NavLink
           to="about"

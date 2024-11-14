@@ -1,16 +1,28 @@
-import { homePage } from '../../data/home';
-import aboutImage from '../../images/about-3.png';
+import aboutImage from '../../images/about-2.png';
+import { Socials } from '../Socials/Socials';
 import css from './Homepage.module.css';
+import { homePage } from '../../data/home';
 
 const Homepage = () => {
-  const { position, description } = homePage;
+  const { name, position, country } = homePage;
   return (
     <div className={css.homeContainer}>
-      <img className={css.homeImage} src={aboutImage} />
-      <div>
-        <h2 className={css.position}>{position}</h2>
-        <p>{description}</p>
+      <div className={css.homeDetails}>
+        <h1 className={css.homeName}>{name}</h1>
+        <p className={css.homeText}>
+          I am a {position} from {country}.
+        </p>
+        {/* Social Links Component */}
+        <Socials />
       </div>
+
+      <img
+        className={css.homeImage}
+        src={aboutImage}
+        alt={name}
+        width="400"
+        height="500"
+      />
     </div>
   );
 };
