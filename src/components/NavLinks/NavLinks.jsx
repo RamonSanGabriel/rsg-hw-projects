@@ -13,8 +13,8 @@ const NavLinks = () => {
     <ul className={css.navLinks}>
       {homeworks.map(homework => (
         <li>
-          {/* <a href="/">{homework}</a> */}
-          {homework}
+          <a href="/">{homework}</a>
+          {/* {homework} */}
         </li>
       ))}
     </ul>

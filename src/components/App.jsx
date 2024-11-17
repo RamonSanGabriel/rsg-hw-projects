@@ -9,6 +9,7 @@ import WebStudio from '../pages/ProjectPage/Html/WebStudio/WebStudio';
 import MovieSearch from '../pages/ProjectPage/Javascript/MovieSearch';
 import Phonebook from '../pages/ProjectPage/React/Phonebook'; */
 import { lazy } from 'react';
+import NotFound from './NotFound/NotFound';
 
 // const SharedLayout = lazy(() => import('./SharedLayout/SharedLayout'));
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="webstudio" element={<WebStudio />} />
           <Route path="moviesearch" element={<MovieSearch />} />
           <Route path="phonebook" element={<Phonebook />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Route>
     </Routes>
